@@ -1,0 +1,92 @@
+.main-head
+
+.logo
+  max-width: 125px
+  display: inline-block
+  margin-right: 38px
+
+.top-line
+  padding: 23px 0
+
+.main-mnu
+  display: inline-block
+  vertical-align: top
+  font-size: 0
+  line-height: 1
+  margin-top: 55px
+  li
+    display: inline-block
+    a
+      position: relative
+      font-size: 15px
+      display: inline-block
+      font-weight: 600
+      color: #784724
+      margin-right: 27px
+      +mt(.3s)
+      &:after
+        content: ''
+        position: absolute
+        height: 2px
+        width: 100%
+        background-color: $accent-green
+        left: 0
+        bottom: -2px
+        opacity: 0
+        +mt(.3s)
+      &:hover
+        color: $accent-green
+        &:after
+          opacity: 1
+    &:last-child
+      a
+        margin-right: 0
+
+.head-contact
+  float: right
+  margin-top: 47px
+
+.hc-item
+  display: inline-block
+  img
+    margin-right: 15px
+    position: relative
+    top: -2px
+    display: none
+
+.head-phone
+  position: relative
+  font-size: 19px
+  color: $accent-black
+  font-weight: 600
+  +mt(.3s)
+  margin-left: 60px
+  &:before
+    content: ''
+    position: absolute
+    width: 16px
+    height: 27px
+    background: url("../img/icons/mobile-icon.png") no-repeat center center
+    background-size: contain
+    left: -30px
+  a
+    +mt(.2s)
+    &:hover
+      color: $accent-green
+.head-contact
+  position: relative
+  font-size: 15px
+  color: $accent-black
+  &:before
+    content: ''
+    position: absolute
+    width: 20px
+    height: 27px
+    background: url("../img/icons/marker-icon.png") no-repeat center center
+    background-size: contain
+    left: -36px
+    top: 0
+
+
+
+

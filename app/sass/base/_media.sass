@@ -4,8 +4,18 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
-
+  .head-contact
+    float: none
+    display: inline-block
+    vertical-align: top
+    margin-top: 0
+  .top-line
+    display: flex
+    width: 100%
+    justify-content: space-between
+    align-items: center
+  .logo
+    margin-right: 22px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -14,14 +24,41 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+  .hc-item
+    display: block
+    &:first-child
+      margin-bottom: 20px
+  .head-phone
+    margin-left: 40px
+
+
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+  .top-line
+    display: block
+    position: relative
 
-
+  .logo
+    display: block
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 30px
+  .toggle-mnu
+    position: absolute
+    top: 15px
+    right: 0
+  .head-contact
+    text-align: center
+    width: 100%
+  .hc-item
+    img
+      display: inline-block
+    &:before
+      display: none
+  .head-phone
+    margin-left: 0
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
