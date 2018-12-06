@@ -71,9 +71,43 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 
+  .team-item-img
+    height: 300px
+
+
+  .team-slider
+    padding: 0 20px
+    .owl-stage
+      padding-bottom: 0
+    .owl-dots
+      text-align: center
+      margin-top: 20px
+    .owl-dot
+      position: relative
+      width: 10px
+      height: 10px
+      background-color: $accent-green
+      display: inline-block
+      margin: 10px
+      transform: rotate(45deg)
+      &.active
+        transform: rotate(45deg) scale(1.5)
+        background-color: darken($accent-green, 5%)
+
+
+  .s-about
+    .about-bg
+      width: 300px
+      height: 430px
+      left: calc(50% - 150px)
+      top: auto
+      bottom: -90px
+
   .section-title
     h3
       font-size: 38px
+      &:after, &:before
+        display: none
 
   .services-wrap
     margin-top: 50px

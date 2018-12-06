@@ -1,0 +1,60 @@
+.s-team
+  padding: 120px 0 40px
+
+.team-slider
+  margin-top: 70px
+  padding: 0 70px
+  position: relative
+  .owl-stage
+    padding-bottom: 100px
+  .owl-nav
+    position: absolute
+    left: 0
+    top: 125px
+    width: 100%
+  .owl-prev, .owl-next
+    width: 28px
+    height: 40px
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center center
+    position: absolute
+    filter: brightness(1)
+    +mt(.3s)
+    &:hover
+      filter: brightness(.8)
+  .owl-prev
+    background-image: url('../img/icons/arrow-prev.png')
+    left: 0
+  .owl-next
+    background-image: url('../img/icons/arrow-next.png')
+    right: 0
+
+.team-item
+  border: 1px solid #f0e9df
+  border-radius: 8px
+  text-align: center
+  padding-bottom: 40px
+  box-shadow: 0 30px 50px -30px rgba($accent-brown, .25)
+  position: relative
+  &-img
+    width: 100%
+    height: 185px
+    background-repeat: no-repeat
+    background-position: center top
+    background-size: cover
+    border-top-left-radius: 8px
+    border-top-right-radius: 8px
+    margin-bottom: 30px
+  &-name
+    padding: 0 15px
+    font-size: 18px
+    font-weight: 600
+    color: $accent-green
+    margin-bottom: 7px
+    background-color: #fff
+  &-desc
+    padding: 0 15px
+    font-size: 13px
+    color: #7e7466
+
