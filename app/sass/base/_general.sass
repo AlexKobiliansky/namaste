@@ -45,7 +45,7 @@ body
   font-family: $default-font
   overflow-x: hidden
   opacity: 1
-  color: $accent-brown
+  color: $accent-text
 
 a, a:hover, a:active, a:focus
   color: inherit
@@ -59,7 +59,21 @@ a, a:hover, a:active, a:focus
 a, input, textarea, button
   outline: none
 
-
+.btn, .btn:focus, .btn:active
+  display: inline-block
+  background: $accent-green
+  border: 2px solid $accent-green
+  color: #fff
+  font-weight: 600
+  font-size: 17px
+  white-space: nowrap
+  line-height: 1
+  padding: 21px 30px
+  border-radius: 50px
+  +mt(.3s)
+  &:hover
+    background: transparent
+    color: $accent-green
 
 //start TOGGLE-MNU
 .toggle-mnu
