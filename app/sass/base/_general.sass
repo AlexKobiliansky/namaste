@@ -78,6 +78,30 @@ a, input, textarea, button
 .s-white
   background-color: #fff
 
+.s-creamy
+  position: relative
+  background-color: #f0e9df
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 52px
+    background-position: center center
+    background-size: cover
+    background-repeat: repeat-x
+    left: 0
+  &:before
+    background-image: url('../img/bg-creamy-before.png')
+    top: -25px
+  &:after
+    background-image: url('../img/bg-creamy-after.png')
+    bottom: -25px
+  .section-title
+    h3
+      &:before, &:after
+        background-color: #e5daca
+        box-shadow: -14px 0 0 #e5daca, 14px 0 0 #e5daca
+
 .section-title
   text-align: center
   h3
