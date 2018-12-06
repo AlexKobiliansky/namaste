@@ -1,5 +1,19 @@
 $(document).ready(function() {
 
+    function heightses() {
+        if ($(window).width()>=479) {
+            $(".service-item-title").matchHeight();
+            $(".service-item-desc").matchHeight();
+        }
+
+    }
+
+    $(window).resize(function() {
+        heightses();
+    });
+
+    heightses();
+
 
 
 

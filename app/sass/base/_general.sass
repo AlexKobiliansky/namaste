@@ -75,6 +75,36 @@ a, input, textarea, button
     background: transparent
     color: $accent-green
 
+.s-white
+  background-color: #fff
+
+.section-title
+  text-align: center
+  h3
+    display: inline-block
+    text-transform: uppercase
+    font-size: 55px
+    line-height: 1.2
+    color: $accent-brown
+    font-family: "DepartmentHCyrillic", sans-serif
+    font-weight: normal
+    position: relative
+    &:before, &:after
+      content: ''
+      position: absolute
+      width: 8px
+      height: 8px
+      background-color: #f3ebdf
+      border-radius: 50%
+      box-shadow: -14px 0 0 #f3ebdf, 14px 0 0 #f3ebdf
+      top: calc(50% - 4px)
+    &:before
+      left: -50px
+    &:after
+      right: -50px
+    span
+      color: $accent-green
+
 //start TOGGLE-MNU
 .toggle-mnu
   display: inline-block
