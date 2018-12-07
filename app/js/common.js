@@ -9,6 +9,8 @@ $(document).ready(function() {
             $(".service-item-desc").matchHeight();
             $(".team-item-name").matchHeight();
             $(".team-item-desc").matchHeight();
+            $(".direct-item-title").matchHeight();
+            $(".direct-item-desc").matchHeight();
         }
 
     }

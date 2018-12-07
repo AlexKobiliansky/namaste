@@ -1,0 +1,54 @@
+.s-directions
+  padding: 100px 0 80px
+  .container
+    position: relative
+    &:before, &:after
+      content: ''
+      position: absolute
+      width: 505px
+      height: 436px
+      background-size: contain
+      bottom: 60px
+    &:before
+      background: url("../img/bg-direct-before.png") no-repeat center center
+      left: -270px
+    &:after
+      background: url("../img/bg-direct-after.png") no-repeat center center
+      right: -270px
+      z-index: 0
+
+
+.directs-wrap
+  margin-top: 65px
+  position: relative
+  z-index: 2
+
+.direct-item
+  border-radius: 15px
+  background-color: #fff
+  box-shadow: 0px 2px 16px rgba($accent-brown, .3)
+  text-align: center
+  margin-bottom: 65px
+  &-img
+    height: 200px
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    border-top-left-radius: 15px
+    border-top-right-radius: 15px
+    margin-bottom: 20px
+  &-title
+    padding: 0 20px
+    font-size: 20px
+    font-weight: 600
+    color: #715341
+    margin-bottom: 20px
+  &-desc
+    padding: 0 20px
+    font-size: 14px
+  .btn
+    padding: 16px 50px
+    position: relative
+    top: 25px
+    &:hover
+      background-color: #fff

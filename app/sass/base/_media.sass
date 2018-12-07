@@ -5,6 +5,11 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 
+  .s-directions
+    .container
+      &:before, &:after
+        display: none
+
   .graph-table
     th:first-child
       width: 150px!important
@@ -96,6 +101,12 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+
+  .s-directions
+    padding: 60px 0 0
+
+  .direct-item
+    margin-bottom: 80px
 
   .cost-item
     font-size: 16px
