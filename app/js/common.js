@@ -51,6 +51,21 @@ $(document).ready(function() {
     });
 
 
+    $(".news-item").each(function(e){
+        $(this).attr("href", "#news-popup-"+ e)
+            .find(".news-popup").attr("id", "news-popup-"+e);
+    });
+
+
+    $('.news-item').magnificPopup({
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in',
+        type: 'inline',
+        fixedContentPos: false,
+        fixedBgPos: true,
+    });
+
+
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change

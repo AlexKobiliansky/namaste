@@ -129,6 +129,9 @@ a, input, textarea, button
     span
       color: $accent-green
 
+.left-column
+  padding-right: 60px
+
 //start TOGGLE-MNU
 .toggle-mnu
   display: inline-block
@@ -166,3 +169,28 @@ a, input, textarea, button
   &.on span:after
     transform: rotate(-45deg) translate(6px, -7px)
 //end TOGGLE-MNU
+
+
+//MY_MFP_ZOOM_IN
+.my-mfp-zoom-in
+  .zoom-anim-dialog, .news-popup
+    opacity: 0
+    transition: all 0.5s ease-in-out
+    transform: scale(0.7)
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .news-popup
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .news-popup
+    transform: scale(0.7)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.5s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .9
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+.mfp-bg
+  background: url("../img/bg-popup.jpg") no-repeat center center
+  background-size: cover
