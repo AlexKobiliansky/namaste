@@ -1,0 +1,71 @@
+.s-graph
+  padding: 100px 0 130px
+
+.graph-wrap
+  margin-top: 30px
+
+.graph-table
+  color: #2a2a2a
+  font-weight: 600
+  width: 100%
+  text-align: center
+  vertical-align: middle
+  border-collapse: collapse
+  border: none
+  th
+    border-right: 1px solid #c3bbb5
+    &:first-child, &:last-child
+      border-right: none
+    &:first-child
+      border-top-left-radius: 15px
+      color: #2a2a2a!important
+      background-color: #c7bdb7
+    &:last-child
+      border-top-right-radius: 15px
+  th
+    background-color: #d9d0cb
+    padding: 20px 15px 18px
+    width: 12.5%
+  td
+    background-color: #fff
+    padding: 30px 0 25px
+    vertical-align: middle
+    border-right: 1px solid #ede5e1
+    border-bottom: 1px solid #ede5e1
+    &:first-child
+      background-color: #f3f1f0
+      border-right: none
+      width: 300px
+  tr:last-child
+    td:first-child
+      border-bottom-left-radius: 15px
+    td:last-child
+      border-bottom-right-radius: 15px
+
+
+.tablesaw-advance
+  margin-bottom: 10px
+  .tablesaw-btn.btn-micro
+    padding: 18px 32px
+    background-color: #c7bdb7
+    border: none
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 14px 20px
+    filter: brightness(.9)
+    &:active, &:focus
+      box-shadow: none!important
+      border-radius: 2px
+      color: inherit
+    &:before
+      display: none
+    &.right
+      background-image: url('../img/icons/arrow-next.png')
+      margin-left: 10px
+    &.left
+      background-image: url('../img/icons/arrow-prev.png')
+      margin-right: 10px
+.tablesaw-advance a.tablesaw-nav-btn.disabled
+  opacity: .5
+
+

@@ -4,6 +4,17 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
+
+  .graph-table
+    th:first-child
+      width: 150px!important
+      padding-left: 15px
+      padding-right: 15px
+    th
+      width: auto
+      padding-left: 50px
+      padding-right: 50px
+
   .s-about
     .about-bg
       left: -52px
@@ -23,6 +34,16 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+
+  .graph-table
+    th
+      padding-left: 30px
+      padding-right: 30px
+      &:first-child
+        //width: 200px
+    td
+      padding-left: 10px
+      padding-right: 10px
 
   .s-about
     padding: 75px 0 100px
@@ -70,6 +91,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
+
+  .s-graph
+    padding: 70px 0
 
   .team-item-img
     height: 300px
@@ -173,5 +197,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
-	/**/
+  .graph-table
+    margin-top: 80px
+  .tablesaw-advance
+    display: none
 
