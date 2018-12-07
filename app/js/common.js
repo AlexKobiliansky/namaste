@@ -24,6 +24,49 @@ $(document).ready(function() {
      * end HEIGHTESS functionality
      */
 
+
+    /**
+     * mobile-mnu customization
+     */
+    var $toggleMenu = $(".toggle-mnu");
+
+    $toggleMenu.click(function() {
+        $(this).toggleClass("on");
+        // return false;
+    });
+
+    var $mmenu = $("#mobile-mnu").mmenu({
+        "pageScroll": true,
+        "navbar": {
+            "title" : "",
+        },
+        "extensions": [
+            "position-right",
+            "theme-dark",
+            "pagedim-black",
+        ],
+    }, {
+        offCanvas: {
+            pageSelector: "#page-content"
+        },
+    });
+
+    var API = $mmenu.data("mmenu");
+
+    API.bind( "close:start", function() {
+        setTimeout(function() {
+            $toggleMenu.removeClass( "on" );
+        }, 300);
+    });
+    /**
+     * end mobile-mnu customization
+     */
+
+    $('.main-mnu a').click(function(e) {
+        e.preventDefault();
+        $(window).stop(true).scrollTo(this.hash, {duration:1000, interrupt:true});
+    });
+
     var $teamSlider = $('.team-slider').owlCarousel({
         loop:true,
         margin:30,

@@ -353,3 +353,34 @@ a, input, textarea, button
         background-color: $accent-green
         color: #fff
 //end POPUP FORM
+
+//start MOBILE-MENU
+.mm-menu_theme-dark
+  background-color: #f0e9df
+
+.mm-logo
+  max-width: 100px
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 20px
+
+.mm-menu a, .mm-menu a:active, .mm-menu a:hover, .mm-menu a:link, .mm-menu a:visited
+  color: $accent-brown
+  text-transform: uppercase
+  font-family: "DepartmentHCyrillic", sans-serif
+  font-size: 20px
+  padding: 15px 20px 15px 50px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 20px
+    height: 20px
+    background: url("../img/logo.png") no-repeat center center
+    background-size: contain
+    left: 20px
+
+.mm-listitem:after
+  //display: none
+
+//end MOBILE-MENU
