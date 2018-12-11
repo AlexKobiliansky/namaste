@@ -35,8 +35,14 @@ $(document).ready(function() {
         // return false;
     });
 
+    var menuLogo = $('#mobile-mnu').data("logo");
     var $mmenu = $("#mobile-mnu").mmenu({
+        navbars: [{
+            content: [ "<img src=" + menuLogo + " class=\"img-responsive mm-logo\" alt=\"alt\"/>" ],
+            height: 4
+        }],
         "pageScroll": true,
+
         "navbar": {
             "title" : "",
         },
@@ -152,6 +158,7 @@ $(document).ready(function() {
             attitude = mapId.data("att"),
             longtitude = mapId.data("long"),
             zoom = mapId.data("zoom"),
+            marker = mapId.data("marker"),
             map = new ymaps.Map("map", {
                 center: [attitude, longtitude],
                 controls: ['zoomControl'],
@@ -166,7 +173,7 @@ $(document).ready(function() {
                 // Необходимо указать данный тип макета.
                 iconLayout: 'default#image',
                 // Своё изображение иконки метки.
-                iconImageHref: 'img/map-marker.png',
+                iconImageHref: marker,
                 // Размеры метки.
                 iconImageSize: [103, 78],
                 // Смещение левого верхнего угла иконки относительно
