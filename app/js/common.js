@@ -149,6 +149,8 @@ $(document).ready(function() {
         })
     });
 
+    $('.gallery-wrap').photoswipe();
+
 
     /**
      * map
